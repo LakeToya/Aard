@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="50" height="50" tilewidth="32" tileheight="32" nextobjectid="11">
+ <tileset firstgid="1" name="Terrain" tilewidth="32" tileheight="32" tilecount="140" columns="14">
+  <image source="../images/Resources1.png" width="448" height="320"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwwEJAAAMBKH7/qWXY6DgqqmqqqqqqqqqqurzBwHpCcU=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztz7EJACAMRcGslP2Xs7UwViJR7uBjkcYXAfC3nPYyHb3o6EXHXVlsde8up3e3zqr/vtYBAAAAAAAAJwyr2wli
+  </data>
+ </layer>
+ <layer name="SolidLayer" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1LkKQjEUhOHg0rv0Lr1ee5f3fy0nWAgXkgshc8TL/8EUaQ8zSelrrRyUo3JSzgHvXjbKVtkpe+WiXJVBuQW8exnf5648lKfyCnj34rpPzUJZKqv06XIPrvvUjLvcg+M2Uxxbd9xmiqPLrn+wxtFldt6OnZex83bsvGwuO4/eeObocvTGM0eXozeeObocvfHMsfPojWfsvIydt5vLzh1+sXMAAAAAAAAA/+kNZToj4A==
+  </data>
+ </layer>
+ <objectgroup name="GameObjects">
+  <object id="9" name="PlayerStart" x="354" y="129" width="31" height="31"/>
+ </objectgroup>
+</map>
