@@ -19,22 +19,26 @@ void SetCamera()
 void UpdateCamera()
 {
 	if(globals.playerEnt->position.x + globals.playerEnt->sprite->width< globals.hotBox.x )
+	{
 		globals.hotBox.x = globals.playerEnt->position.x + globals.playerEnt->sprite->width;
+	}
 	if(globals.playerEnt->position.y < globals.hotBox.y)
+	{
 		globals.hotBox.y = globals.playerEnt->position.y;
+	}
 	if(globals.playerEnt->position.x > globals.hotBox.x + globals.hotBox.w)
+	{
 		globals.hotBox.x = globals.playerEnt->position.x - globals.hotBox.w;
+	}
 	if(globals.playerEnt->position.y +globals. playerEnt->sprite->height >globals.hotBox.y+ globals.hotBox.h)
+	{
 		globals.hotBox.y = globals.playerEnt->position.y+ globals.playerEnt->sprite->height - globals.hotBox.h;
-
+	}
 	globals.camera.x =(globals.hotBox.x + globals.hotBox.w/2) - SCREEN_WIDTH/2;
 	globals.camera.y =(globals.hotBox.y + globals.hotBox.h/2) - SCREEN_HEIGHT/2;
-	/*
-	if(globals.playerEnt->position.y > SCREEN_HEIGHT/2)
-	{
-		globals.camera.y +=5;
-		globals.playerEnt->position.y -= globals.playerEnt->speed;
-	}
-	*/
+		if( globals.camera.x <= 0)
+			globals.camera.x = 0;
+		if( globals.camera.y <= 0)
+			globals.camera.y = 0 ;
 
 }

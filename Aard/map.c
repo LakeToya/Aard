@@ -85,8 +85,10 @@ void draw_objects(tmx_object_group *objgr) {
 	while (head) {
 		if (head->visible) {
 			if (head->shape == S_SQUARE) {
-				rect.x =     head->x;  rect.y =      head->y;
-				rect.w = head->width;  rect.h = head->height;
+				rect.x = head->x- globals.camera.x;  
+				rect.y = head->y- globals.camera.y;
+				rect.w = head->width;  
+				rect.h = head->height;
 				SDL_RenderDrawRect(GetRenderer(), &rect);
 			} else if (head->shape  == S_POLYGON) {
 				draw_polygon(head->points, head->x, head->y, head->points_len);

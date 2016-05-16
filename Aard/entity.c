@@ -108,7 +108,7 @@ void FreeEntity(Entity* ent)
 	}
 }
 
-void SolidLayerCollision(Entity* ent)
+Vec2D SolidLayerCollision(Entity* ent)
 {
 	Vec2D dir;
 	Vec2D mid = CreateVec2D(ent->position.x + ent->sprite->width/2,ent->position.y + ent->sprite->height/2);
@@ -122,33 +122,37 @@ void SolidLayerCollision(Entity* ent)
 		{
 			if(CheckTileSolid(x/globals.tileWidth,y/globals.tileHeight)){
 				if(CheckTileSolid(x/globals.tileWidth,y2/globals.tileHeight)){
-					
+					dir.x = ent->speed;
 				}
-				//dir.y = ent->speed;
+				dir.y = ent->speed;
 				printf("TileCollision");
+				return dir;
 			}
 		}
 		if(CheckTileSolid(x/globals.tileWidth,y2/globals.tileHeight)){
-			//dir.y = -ent->speed;
+			dir.y = -ent->speed;
 			printf("TileCollision");
+			return dir;
 		}
 	}
 	for(y = ent->position.y;y < y2;y+=globals.tileHeight)
 	{
 		if(CheckTileSolid(x2/globals.tileWidth,y/globals.tileHeight))
 		{
-			//dir.x = -ent->speed;
-			//dir.y = ent->speed;
+			dir.x = -ent->speed;
+			dir.y = ent->speed;
 			printf("TileCollision");
+			return dir;
 		}
 	}
 		if(CheckTileSolid(x2/globals.tileWidth,y2/globals.tileHeight))
 		{
-			//dir.x = -ent->speed;
-			//dir.y = -ent->speed;
+			dir.x = -ent->speed;
+			dir.y = -ent->speed;
 			printf("TileCollision");
+			return dir;
 		}
-
+		return dir;
 
 }
 

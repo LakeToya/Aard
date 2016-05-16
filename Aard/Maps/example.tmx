@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="left-down" width="50" height="50" tilewidth="32" tileheight="32" nextobjectid="11">
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="50" height="50" tilewidth="32" tileheight="32" nextobjectid="12">
  <tileset firstgid="1" name="Terrain" tilewidth="32" tileheight="32" tilecount="140" columns="14">
   <image source="../images/Resources1.png" width="448" height="320"/>
  </tileset>
@@ -18,6 +18,9 @@
    eJzt1LkKQjEUhOHg0rv0Lr1ee5f3fy0nWAgXkgshc8TL/8EUaQ8zSelrrRyUo3JSzgHvXjbKVtkpe+WiXJVBuQW8exnf5648lKfyCnj34rpPzUJZKqv06XIPrvvUjLvcg+M2Uxxbd9xmiqPLrn+wxtFldt6OnZex83bsvGwuO4/eeObocvTGM0eXozeeObocvfHMsfPojWfsvIydt5vLzh1+sXMAAAAAAAAA/+kNZToj4A==
   </data>
  </layer>
+ <objectgroup name="Rooms">
+  <object id="11" name="Room_1" x="0" y="0" width="960" height="736"/>
+ </objectgroup>
  <objectgroup name="GameObjects">
   <object id="9" name="PlayerStart" x="354" y="129" width="31" height="31"/>
  </objectgroup>

@@ -71,6 +71,7 @@
   <ItemGroup>
     <ClInclude Include="camera.h" />
     <ClInclude Include="chipmunkPhys.h" />
+    <ClInclude Include="collision.h" />
     <ClInclude Include="entity.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="globals.h" />
@@ -84,6 +85,7 @@
   <ItemGroup>
     <ClCompile Include="camera.c" />
     <ClCompile Include="chipmunkPhys.c" />
+    <ClCompile Include="collision.c" />
     <ClCompile Include="entity.c" />
     <ClCompile Include="game.c" />
     <ClCompile Include="globals.c" />

@@ -46,5 +46,5 @@ void SwitchAnimation(Entity* ent, AnimationType type);
 int GetID(Entity *ent);
 Entity* GetEntityByID(int id);
 
-void SolidLayerCollision(Entity* ent);
+Vec2D SolidLayerCollision(Entity* ent);
 #endif

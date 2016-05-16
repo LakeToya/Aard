@@ -116,9 +116,11 @@ Entity *CreatePlayer()
 }
 void UpdatePlayer(Entity *ent)
 {
+
 	Movement(ent);
 	Vec2DAdd(ent->position,ent->position,ent->velocity);
-	SolidLayerCollision(ent);
+	//Handle Tile Static Collision
+	Vec2DAdd(ent->position,ent->position,SolidLayerCollision(ent));
 }
 void ThinkPlayer(Entity* ent)
 {
